@@ -1,4 +1,4 @@
-import actions.Affordance
+import actions.Action
 import world.World
 
 object Interpreter {
@@ -41,7 +41,7 @@ object Interpreter {
             println("There are $itemCount item(s) in the ${World.currentPlace!!.name}.")
             World.currentPlace!!.placeInventory.forEach {
                 print(" ${it.name} \t\t ")
-                it.affordances.forEach {
+                it.actions.forEach {
                     print("[${it.type.name}] ")
                 }
                 println()

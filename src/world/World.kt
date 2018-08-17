@@ -1,6 +1,6 @@
 package world
 
-import actions.Affordance
+import actions.Action
 import actions.AffordanceType
 import items.Item
 import places.Place
@@ -9,7 +9,7 @@ import Interpreter
 import com.sun.tools.javac.util.FatalError
 
 object World {
-    var places: ArrayList<Place> = arrayListOf()
+    var places: List<Place> = arrayListOf()
     var startingPlace: Place? = null
     var currentPlace: Place? = null
 
@@ -31,12 +31,12 @@ object World {
     fun generateWorld() {
         // Create items
         var bed: Item = Item("Bed", arrayListOf(
-                Affordance(AffordanceType.SLEEP),
-                Affordance(AffordanceType.SIT)
+                Action(AffordanceType.SLEEP),
+                Action(AffordanceType.SIT)
         ))
         var chair: Item = Item("Chair", arrayListOf(
-                Affordance(AffordanceType.SIT),
-                Affordance(AffordanceType.PICKUP)
+                Action(AffordanceType.SIT),
+                Action(AffordanceType.PICKUP)
         ))
         // Put items into bedroom
         places.add(Place("Bedroom", PlaceType.ROOM, arrayListOf(

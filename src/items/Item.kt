@@ -1,16 +1,16 @@
 package items
 
-import actions.Affordance
+import actions.Action
 import actions.AffordanceType
 
 class Item(
         val nameInput: String,
-        val affordanceInput: ArrayList<Affordance>
+        val affordanceInput: List<Action>
 ) {
     var name: String = nameInput
-    var affordances: ArrayList<Affordance> = arrayListOf()
+    var actions: List<Action> = arrayListOf()
 
     init {
-        this.affordances.addAll(affordanceInput)
+        this.actions.addAll(affordanceInput)
     }
 }

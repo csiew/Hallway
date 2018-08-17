@@ -9,7 +9,8 @@ class Place(
 ) {
     var name: String = nameInput
     var placeType: PlaceType = placeTypeInput
-    var placeInventory: ArrayList<Item> = arrayListOf()
+    var placeInventory: List<Item> = arrayListOf()
+    var actions: List<Action> = arrayListOf()
 
     val welcomeMessage: String = "You are in your bedroom."
 
@@ -19,5 +20,9 @@ class Place(
 
     fun entry() {
         println(welcomeMessage)
+    }
+
+    fun actions() {
+
     }
 }

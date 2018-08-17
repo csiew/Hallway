@@ -2,7 +2,7 @@ package actions
 
 import com.sun.tools.javac.util.FatalError
 
-class Affordance(
+class Action (
         val typeInput: AffordanceType
 ) {
     var type: AffordanceType = typeInput
