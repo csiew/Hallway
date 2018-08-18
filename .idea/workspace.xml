@@ -2,18 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="417f603b-dd79-4a74-9a5b-07ec37fe7108" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/items/ItemType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/player/HealthImpactType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/player/HealthStateType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/player/Player.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/player/PlayerEventType.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interpreter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interpreter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/Action.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/Action.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/AffordanceType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/AffordanceType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/items/Item.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/items/Item.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/places/Place.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/places/Place.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world/World.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/world/World.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/AppKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/Interpreter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/META-INF/Hallway.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Hallway/META-INF/Hallway.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/actions/Action.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/actions/AffordanceType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/items/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/items/ItemType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/places/Place.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/places/PlaceType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/player/HealthImpactType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/player/HealthStateType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/player/Player$WhenMappings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/player/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/player/PlayerEventType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Hallway/world/World.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/App.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interpreter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Interpreter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/Action.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/actions/Action.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/AffordanceType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/actions/AffordanceType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/items/Item.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/items/Item.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/items/ItemType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/items/ItemType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/places/Place.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/places/Place.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/places/PlaceType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/places/PlaceType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player/HealthImpactType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/player/HealthImpactType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player/HealthStateType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/player/HealthStateType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/player/Player.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player/PlayerEventType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/player/PlayerEventType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world/World.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/world/World.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,66 +50,33 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="kt" value="7585" />
+          <entry key="kt" value="7680" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Kotlin" value="7585" />
+          <entry key="Kotlin" value="7680" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="kt" value="21" />
+          <entry key="kt" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Kotlin" value="21" />
+          <entry key="Kotlin" value="25" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/actions/Action.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-              <folding>
-                <element signature="e#17#117#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/AffordanceType.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/Interpreter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/places/Place.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#16#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interpreter.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+            <state relative-caret-position="45">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -100,52 +84,36 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/world/World.kt">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/player/Player.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="67" column="13" lean-forward="true" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
-              <folding>
-                <element signature="e#15#242#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="182">
+              <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/player/Player.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/world/World.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="263">
+              <caret line="43" column="143" lean-forward="true" selection-start-line="43" selection-start-column="143" selection-end-line="43" selection-end-column="143" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/player/PlayerEventType.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/player/HealthImpactType.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            <state relative-caret-position="150">
+              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/player/HealthImpactType.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/player/HealthStateType.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/Hallway.iml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -180,10 +148,11 @@
         <option value="$PROJECT_DIR$/src/player/HealthImpactType.kt" />
         <option value="$PROJECT_DIR$/src/player/HealthType.kt" />
         <option value="$PROJECT_DIR$/src/player/HealthStateType.kt" />
-        <option value="$PROJECT_DIR$/src/player/Player.kt" />
         <option value="$PROJECT_DIR$/src/world/World.kt" />
         <option value="$PROJECT_DIR$/src/Interpreter.kt" />
         <option value="$PROJECT_DIR$/src/actions/Action.kt" />
+        <option value="$PROJECT_DIR$/src/player/Player.kt" />
+        <option value="$PROJECT_DIR$/src/main/player/Player.kt" />
       </list>
     </option>
   </component>
@@ -233,7 +202,52 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Hallway" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Hallway" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="Hallway" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Hallway" type="616d4139:PackageViewModuleNode" />
+              <item name="main" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Hallway" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Hallway" type="616d4139:PackageViewModuleNode" />
+              <item name="main" type="1f31426a:PackageElementNode" />
+              <item name="actions" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Hallway" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Hallway" type="616d4139:PackageViewModuleNode" />
+              <item name="main" type="1f31426a:PackageElementNode" />
+              <item name="items" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Hallway" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Hallway" type="616d4139:PackageViewModuleNode" />
+              <item name="main" type="1f31426a:PackageElementNode" />
+              <item name="places" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Hallway" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Hallway" type="616d4139:PackageViewModuleNode" />
+              <item name="main" type="1f31426a:PackageElementNode" />
+              <item name="player" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="Hallway" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Hallway" type="616d4139:PackageViewModuleNode" />
+              <item name="main" type="1f31426a:PackageElementNode" />
+              <item name="world" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,74 +260,15 @@
               <item name="Hallway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Hallway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hallway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hallway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hallway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="items" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hallway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hallway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="places" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hallway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hallway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="world" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Hallway" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Hallway" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="Hallway" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Hallway" type="616d4139:PackageViewModuleNode" />
-              <item name="actions" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Hallway" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Hallway" type="616d4139:PackageViewModuleNode" />
-              <item name="items" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Hallway" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Hallway" type="616d4139:PackageViewModuleNode" />
-              <item name="places" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Hallway" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Hallway" type="616d4139:PackageViewModuleNode" />
-              <item name="player" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="Hallway" type="58d84e3e:PackageViewProjectNode" />
-              <item name="Hallway" type="616d4139:PackageViewModuleNode" />
-              <item name="world" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534579621109" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534602652501" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -323,6 +278,12 @@
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="player" />
       <recent name="places" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -338,14 +299,14 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="AppKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="main.AppKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="Hallway" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="AppKt" />
+      <option name="MAIN_CLASS_NAME" value="main.AppKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -353,7 +314,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.AppKt" />
+        <item itemvalue="Kotlin.main.AppKt" />
       </list>
     </recent_temporary>
   </component>
@@ -372,21 +333,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49773756" visible="true" weight="0.2536349" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49773756" visible="true" weight="0.25767368" />
       <window_info id="Structure" order="6" sideWeight="0.50337076" side_tool="true" weight="0.2536349" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.6696833" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.32880846" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32880846" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32880846" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -437,28 +399,28 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/actions/Affordance.kt" />
-    <entry file="file://$PROJECT_DIR$/src/places/PlaceType.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/places/PlaceType.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/App.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/ItemType.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/items/ItemType.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/items/Item.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/items/Item.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
@@ -472,28 +434,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/player/PlayerEventType.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/player/PlayerEventType.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/player/HealthStateType.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/player/HealthStateType.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/player/HealthImpactType.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/places/Place.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/places/Place.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
@@ -503,47 +458,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/player/Player.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interpreter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/world/World.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="67" column="13" lean-forward="true" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
-          <folding>
-            <element signature="e#15#242#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/AffordanceType.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/actions/AffordanceType.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/Action.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/actions/Action.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
           <folding>
             <element signature="e#17#117#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/actions/Action.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="e#17#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/world/World.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Interpreter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/actions/AffordanceType.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/player/HealthStateType.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/player/HealthImpactType.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/player/PlayerEventType.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/player/Player.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Interpreter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/player/HealthImpactType.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/world/World.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="43" column="143" lean-forward="true" selection-start-line="43" selection-start-column="143" selection-end-line="43" selection-end-column="143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/player/Player.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
         </state>
       </provider>
     </entry>
