@@ -1,9 +1,9 @@
-package actions
+package main.actions
 
-import player.HealthImpactType
-import player.Player
-import player.PlayerEventType
-import world.World
+import main.Interpreter
+import main.player.HealthImpactType
+import main.player.Player
+import main.player.PlayerEventType
 
 class Action (
         val affordanceMessageInput: String,

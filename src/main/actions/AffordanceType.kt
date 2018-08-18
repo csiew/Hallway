@@ -1,4 +1,4 @@
-package actions
+package main.actions
 
 enum class AffordanceType {
     PICKUP,
