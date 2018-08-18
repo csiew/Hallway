@@ -3,7 +3,9 @@ import world.World
 
 object Interpreter {
     var promptInput: String? = null
-    var actions: ArrayList<Affordance> = arrayListOf()
+    var actions: ArrayList<Action> = arrayListOf()
+
+    var placeActionMap: MutableMap<Int, Action> = mutableMapOf()
 
     fun prompt() {
         while (promptInput != "exit") {
@@ -18,42 +20,60 @@ object Interpreter {
     private fun perform(promptInput: String) {
         when (promptInput) {
             "whatis" ->
-                presentItems()
+                presentActions()
             "help","?" ->
                 println("""
                     |
                     |  H E L P
                     |
+                    |    whatis     What's in the room
                     |    help       Get list of actions
+                    |    reset      Reset again
                     |    exit       Exit game
                     |
                 """.trimMargin())
+            "reset" ->
+                return World.reset()
             "exit" ->
-                System.exit(0)
+                return World.endSession()
             else ->
-                println("You can't do that.")
+                if (placeActionMap[promptInput.toInt()] is Action) {
+                    placeActionMap[promptInput.toInt()]!!.perform()
+                } else {
+                    println("You can't do that.")
+                }
         }
     }
 
-    private fun presentItems() {
+    fun presentActions() {
         val itemCount: Int = World.currentPlace!!.placeInventory.size
         if (itemCount > 0) {
-            println("There are $itemCount item(s) in the ${World.currentPlace!!.name}.")
+            var i = 0
             World.currentPlace!!.placeInventory.forEach {
-                print(" ${it.name} \t\t ")
+                println("\n${it.name}:")
                 it.actions.forEach {
-                    print("[${it.type.name}] ")
+                    println("[ $i ] ${it.affordanceMessage}")
+                    placeActionMap[i] = it
+                    i++
                 }
-                println()
+            }
+            println()
+        }
+    }
+
+    fun playAgain() {
+        while (promptInput != "y" || promptInput != "Y" || promptInput != "n" || promptInput != "N") {
+            print("Play again? [ Y / N ]: ")
+            promptInput = readLine()
+            if (promptInput == "y" || promptInput == "Y") {
+                World.reset()
+            } else if (promptInput == "n" || promptInput == "N") {
+                World.endSession()
             }
         }
     }
 
-    private fun tryDo(tryInput: String) {
-
-    }
-
-    fun passActions(currentActions: ArrayList<Affordance>) {
+    fun passActions(currentActions: ArrayList<Action>) {
         actions.clear()
         actions.addAll(currentActions)
     }

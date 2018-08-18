@@ -1,30 +1,27 @@
 package actions
 
-import com.sun.tools.javac.util.FatalError
+import player.HealthImpactType
+import player.Player
+import player.PlayerEventType
+import world.World
 
 class Action (
-        val typeInput: AffordanceType
+        val affordanceMessageInput: String,
+        val doingMessageInput: String,
+        val doingResultMessageInput: String,
+        val typeInput: AffordanceType,
+        val healthImpactTypeInput: HealthImpactType
 ) {
+    var affordanceMessage: String = affordanceMessageInput
+    var doingMessage: String = doingMessageInput
+    val doingResultMessage: String = doingResultMessageInput
     var type: AffordanceType = typeInput
+    var healthImpactType: HealthImpactType = healthImpactTypeInput
 
-    fun usageMessage(name: String) {
-        when (type) {
-            AffordanceType.PICKUP ->
-                println("Picking up $name")
-            AffordanceType.DROP ->
-                println("Dropping $name")
-            AffordanceType.ATTACK ->
-                println("Using $name to attack")
-            AffordanceType.EAT ->
-                println("Eating the $name")
-            AffordanceType.SMELL ->
-                println("Smelling the $name")
-            AffordanceType.READ ->
-                println("Reading $name")
-            AffordanceType.SLEEP ->
-                println("Sleeping in $name")
-            AffordanceType.SIT ->
-                println("Sitting on the $name")
+    fun perform() {
+        println("$doingMessage\n$doingResultMessage")
+        if (Player.takeDamage(healthImpactType) == PlayerEventType.DEATH) {
+            Interpreter.playAgain()
         }
     }
 }

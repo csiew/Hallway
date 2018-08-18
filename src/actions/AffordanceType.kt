@@ -8,5 +8,7 @@ enum class AffordanceType {
     SMELL,
     READ,
     SLEEP,
-    SIT
+    SIT,
+    TOUCH,
+    OPEN
 }

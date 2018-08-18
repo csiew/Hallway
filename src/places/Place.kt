@@ -1,5 +1,6 @@
 package places
 
+import actions.Action
 import items.Item
 
 class Place(
@@ -9,8 +10,8 @@ class Place(
 ) {
     var name: String = nameInput
     var placeType: PlaceType = placeTypeInput
-    var placeInventory: List<Item> = arrayListOf()
-    var actions: List<Action> = arrayListOf()
+    var placeInventory: ArrayList<Item> = arrayListOf()
+    var actions: ArrayList<Action> = arrayListOf()
 
     val welcomeMessage: String = "You are in your bedroom."
 
@@ -19,7 +20,12 @@ class Place(
     }
 
     fun entry() {
+        Interpreter.presentActions()
         println(welcomeMessage)
+    }
+
+    fun exit() {
+        Interpreter.placeActionMap.clear()
     }
 
     fun actions() {
