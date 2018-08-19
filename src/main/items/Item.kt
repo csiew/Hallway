@@ -2,10 +2,10 @@ package main.items
 
 import main.actions.Action
 
-class Item(
-        val nameInput: String,
-        val affordanceInput: ArrayList<Action>,
-        val typeInput: ItemType
+open class Item(
+        nameInput: String,
+        affordanceInput: ArrayList<Action>,
+        typeInput: ItemType
 ) {
     var name: String = nameInput
     var actions: ArrayList<Action> = arrayListOf()

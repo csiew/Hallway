@@ -31,31 +31,72 @@ object World {
     }
 
     fun generateWorld() {
-        // Create main.main.items
-        var bed: Item = Item("Bed", arrayListOf(
+
+        val hallway = Place("Hallway", "You are in the hallway.", PlaceType.HALLWAY)
+        val bedroom = Place("Bedroom", "You are in your bedroom.", PlaceType.ROOM)
+        val emptyRoom = Place("Empty Room", "You are in a room.", PlaceType.ROOM)
+
+        // Hallway items
+        val bedroomDoor: Item = Item("Door", arrayListOf(
+                Action("Open the door.", "Opened the door.", "", AffordanceType.PORTAL, HealthImpactType.NONE, bedroom)
+        ), ItemType.STATIC)
+        val emptyRoomDoor: Item = Item("Door", arrayListOf(
+                Action("Open the door.", "Opened the door.", "", AffordanceType.PORTAL, HealthImpactType.NONE, emptyRoom)
+        ), ItemType.STATIC)
+
+        // Bedroom items
+        val bed: Item = Item("Bed", arrayListOf(
                 Action("Sleep in the bed.", "Sleeping in the bed.", "You are fast asleep.", AffordanceType.SLEEP, HealthImpactType.NONE),
                 Action("Sit on the bed.", "Sitting on the bed.", "It's rather soft.", AffordanceType.SIT, HealthImpactType.NONE)
         ), ItemType.STATIC)
-        var chair: Item = Item("Chair", arrayListOf(
+        val chair: Item = Item("Chair", arrayListOf(
                 Action("Sit on the chair.", "Sitting on the chair.", "It's a comfy chair.", AffordanceType.SIT, HealthImpactType.NONE),
                 Action("Pickup the chair.", "Picked up the chair.", "It's not that heavy.", AffordanceType.PICKUP, HealthImpactType.NONE)
         ), ItemType.PORTABLE)
-        var cactus: Item = Item("Cactus", arrayListOf(
+        val cactus: Item = Item("Cactus", arrayListOf(
                 Action("Touch the cactus.", "Touching the cactus.", "Ouch! You're bleeding!", AffordanceType.TOUCH, HealthImpactType.BLEEDING),
                 Action("Pickup the cactus.", "Picked up the cactus.", "OUCH! The cactus thorns are piercing your skin.", AffordanceType.PICKUP, HealthImpactType.BLEEDING)
         ), ItemType.PORTABLE)
-        var door: Item = Item("Door", arrayListOf(
-                Action("Open the door.", "Opened the door.", "You have fallen out of the main.main.world.", AffordanceType.OPEN, HealthImpactType.INSTANTDEATH)
+        val door1: Item = Item("Door", arrayListOf(
+                Action("Open the door.", "Opened the door.", "", AffordanceType.PORTAL, HealthImpactType.NONE, hallway)
         ), ItemType.STATIC)
-        // Put main.main.items into bedroom
-        places.add(Place("Bedroom", PlaceType.ROOM, arrayListOf(
+
+        // Empty Room items
+        val door2: Item = Item("Door", arrayListOf(
+                Action("Open the door.", "Opened the door.", "", AffordanceType.PORTAL, HealthImpactType.NONE, hallway)
+        ), ItemType.STATIC)
+
+        // Add items into places
+        hallway.addItems(arrayListOf(
+                bedroomDoor,
+                emptyRoomDoor
+        ))
+        bedroom.addItems(arrayListOf(
                 bed,
                 chair,
                 cactus,
-                door
-        )))
+                door1
+        ))
+        emptyRoom.addItems(arrayListOf(
+                door2
+        ))
+
+        // Assemble world
+        batchAddPlaces(
+                arrayListOf(
+                        hallway,
+                        bedroom,
+                        emptyRoom
+                )
+        )
 
         startingPlace = places.first()
+    }
+
+    private fun batchAddPlaces(placeArray: ArrayList<Place>) {
+        placeArray.forEach {
+            places.add(it)
+        }
     }
 
     fun reset() {

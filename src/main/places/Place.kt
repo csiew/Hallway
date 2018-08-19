@@ -5,24 +5,31 @@ import main.actions.Action
 import main.items.Item
 
 class Place(
-        val nameInput: String,
-        val placeTypeInput: PlaceType,
-        val placeInventoryInput: ArrayList<Item>
+        nameInput: String,
+        welcomeMessageInput: String,
+        placeTypeInput: PlaceType,
+        placeInventoryInput: ArrayList<Item>? = arrayListOf()
 ) {
     var name: String = nameInput
     var placeType: PlaceType = placeTypeInput
-    var placeInventory: ArrayList<Item> = arrayListOf()
+    var placeInventory: ArrayList<Item> = placeInventoryInput!!
     var actions: ArrayList<Action> = arrayListOf()
 
-    val welcomeMessage: String = "You are in your bedroom."
+    val welcomeMessage: String = welcomeMessageInput
 
     init {
-        this.placeInventory.addAll(placeInventoryInput)
+        this.placeInventory.addAll(placeInventoryInput!!)
     }
 
     fun entry() {
         Interpreter.presentActions()
         println(welcomeMessage)
+    }
+
+    fun addItems(inventory: ArrayList<Item>) {
+        if (inventory.isNotEmpty()) {
+            this.placeInventory.addAll(inventory)
+        }
     }
 
     fun exit() {

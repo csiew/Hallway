@@ -49,6 +49,8 @@ object Interpreter {
 
     fun presentActions() {
         val itemCount: Int = World.currentPlace!!.placeInventory.size
+        placeActionMap.clear()
+        // Never call place entry here!
         if (itemCount > 0) {
             var i = 0
             World.currentPlace!!.placeInventory.forEach {
@@ -60,6 +62,8 @@ object Interpreter {
                 }
             }
             println()
+        } else {
+            println("There is nothing here.\n")
         }
     }
 

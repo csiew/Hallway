@@ -10,5 +10,6 @@ enum class AffordanceType {
     SLEEP,
     SIT,
     TOUCH,
-    OPEN
+    OPEN,
+    PORTAL
 }
